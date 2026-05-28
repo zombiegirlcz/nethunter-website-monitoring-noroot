@@ -14,6 +14,7 @@ This project is best used in conjunction with [zombiegirlcz/kali_core_emulator](
 - **Packet Parser:** Application-layer inspection (HTTP, FTP, Telnet, SMTP) and credential detection.
 - **DNS & Recon:** Advanced DNS lookups (dig) and Whois reconnaissance.
 - **Honeypot:** Multi-port TCP honeypot with automated Metasploit counter-measures.
+- **High Availability:** Shadow honeypot pair with a watchdog system for automated revival and persistence.
 - **Background Services:** Managed via PM2 for persistence.
 - **No-Root Focus:** All tools are configured to run within standard user permissions.
 
