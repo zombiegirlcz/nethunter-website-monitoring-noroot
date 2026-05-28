@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""Wrapper: spouští honeypot jako ``python3 -m nethunter_tui.honeypot``
+s volitelným ``--instance primary|shadow`` pro shadow failover.
+"""
+import sys, os, argparse
+
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--instance", default="primary",
+                    choices=["primary", "shadow"])
+args = parser.parse_args()
+
+from nethunter_tui.honeypot import run_daemon
+run_daemon(instance=args.instance)

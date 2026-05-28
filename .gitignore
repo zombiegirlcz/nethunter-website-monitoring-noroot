@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# PID files
+*.pid
+
+# Session artifacts
+prompt.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+GEMINI.mdvpn_internal.log
+vpn_capture.log
+

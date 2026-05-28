@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+"""Wrapper: spouští VPN logger jako ``python3 -m nethunter_tui.vpn_sniffer``."""
+import sys, os
+
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+
+from nethunter_tui.vpn_sniffer import run_daemon
+run_daemon()
